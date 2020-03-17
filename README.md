@@ -1,5 +1,6 @@
-# todolist
-
+# todolist using Vuejs cli
+## Tutorial Link
+# https://www.youtube.com/watch?v=Wy9q22isx3U
 ## Project setup
 ```
 npm install
