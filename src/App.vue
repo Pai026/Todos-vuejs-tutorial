@@ -25,18 +25,23 @@ export default {
       ]
     }
   },
-  methods:{
-    deleteTodo(id){
-      this.todos=this.todos.filter(todo=>todo.id!==id);
+  methods: {
+    deleteTodo(id) {
+      
+        this.todos = this.todos.filter(todo => todo.id !== id)
+        
     },
-    addTodo(newTodo){
-      this.todos=[...this.todos,newTodo];
+    addTodo(newTodo) {
+      
+      
+        this.todos = [...this.todos, newTodo]
+        
     }
   },
-  created(){
-    axios.get('https://jsonplaceholder.typicode.com/todos?_limit=7')
-    .then(res => this.todos = res.data)
-    .catch(err=>console.log(err))
+  created() {
+    axios.get('https://jsonplaceholder.typicode.com/todos')
+      .then(res => this.todos = res.data)
+      .catch(err => console.log(err));
   }
 
 }

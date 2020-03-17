@@ -18,7 +18,7 @@ export default {
     },
     methods:{
         addTodo(e){
-            console.log(123);
+            
             e.preventDefault();
             const newTodo = {
                 id:uuidv4,
